@@ -2,7 +2,7 @@
        --primary-color: #ffaa33;
        --background-color: #faf2d2;
        --text-color: #181818;
-       --footer-bg: #3e3e3e;
+       --secondary-color: #3e3e3e;
        --link-color: aquamarine;
 }
 
@@ -12,8 +12,12 @@
 }
 
 a {
-	text-decoration: none;
-	color: var(--text-color);
+       text-decoration: none;
+       color: var(--link-color);
+}
+
+.navigationbar a {
+       color: var(--text-color);
 }
 
 li {
@@ -100,13 +104,13 @@ html, body {
 }
 
 .menu_items {
-	margin: 0px 5px;
-	padding: 3px 7px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-       background-color: var(--primary-color);
+       margin: 0px 5px;
+       padding: 3px 7px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       background-color: var(--secondary-color);
        border-radius: 10px;
 }
 
@@ -159,7 +163,7 @@ html, body {
 
 .footer {
        padding: 10px 20px;
-       background-color: var(--footer-bg);
+       background-color: var(--secondary-color);
        color: white;
 }
 
