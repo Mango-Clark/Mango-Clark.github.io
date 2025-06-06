@@ -1,11 +1,23 @@
+:root {
+       --primary-color: #ffaa33;
+       --background-color: #faf2d2;
+       --text-color: #181818;
+       --secondary-color: #3e3e3e;
+       --link-color: aquamarine;
+}
+
 * {
-	padding: 0px 0px;
-	border: 0px;
+       padding: 0px 0px;
+       border: 0px;
 }
 
 a {
-	text-decoration: none;
-	color: var(--text-color);
+       text-decoration: none;
+       color: var(--link-color);
+}
+
+.navigationbar a {
+       color: var(--text-color);
 }
 
 li {
@@ -14,11 +26,12 @@ li {
 
 
 html, body {
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	font-size: 100%;
-	font-family: Arial, Helvetica, sans-serif;
+       margin: 0;
+       padding: 0;
+       height: 100%;
+       font-size: 100%;
+       font-family: 'Roboto', Arial, Helvetica, sans-serif;
+       color: var(--text-color);
 }
 
 .wrap {
@@ -27,16 +40,32 @@ html, body {
 
 /* navigation bar */
 
-nav {
-	position: sticky;
-	top: 0;
-	height: 90px;
-	background-color: #faf2d2;
-	color: #181818;
-	display: flex;
-	justify-self: center;
-	align-items: center;
-	justify-content: space-between;
+.navigationbar {
+       position: sticky;
+       top: 0;
+       height: 90px;
+       color: var(--text-color);
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navigationbar.top {
+        background-color: transparent;
+}
+
+.navigationbar.active {
+        background-color: rgba(250, 242, 210, 0.85);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(4px);
+}
+
+.navigationbar.scrolled {
+       background-color: var(--background-color);
+       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .title {
@@ -75,14 +104,14 @@ nav {
 }
 
 .menu_items {
-	margin: 0px 5px;
-	padding: 3px 7px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: #ffaa33;
-	border-radius: 10px;
+       margin: 0px 5px;
+       padding: 3px 7px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       background-color: var(--secondary-color);
+       border-radius: 10px;
 }
 
 .menu_items .icon {
@@ -120,23 +149,26 @@ nav {
 	}
 }
 
+
 .container {
-	padding: 15px 10px;
+       padding: 20px;
+       max-width: 800px;
+       margin: 0 auto;
 }
 
 .content {
-	border: 1px solid;
-	padding-left: 15px;
+       border: 1px solid var(--text-color);
+       padding: 0 15px;
 }
 
 .footer {
-	padding: 10px 20px;
-	background-color: #3e3e3e;
-	color: white;
+       padding: 10px 20px;
+       background-color: var(--secondary-color);
+       color: white;
 }
 
 .gitlabicons > a {
-        color: aquamarine;
-        font-style: italic;
-        text-shadow: 1px 1px 2px #181818;
+       color: var(--link-color);
+       font-style: italic;
+       text-shadow: 1px 1px 2px var(--text-color);
 }

@@ -1,0 +1,10 @@
+{
+  "name": "mango-clark.github.io",
+  "version": "1.0.0",
+  "description": "HTML, CSS and JavaScript practices.",
+  "main": "script.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
