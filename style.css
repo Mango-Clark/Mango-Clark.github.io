@@ -171,7 +171,11 @@ body {
 }
 
 .gitlabicons>a {
-	color: var(--secondary-link-color);
-	font-style: italic;
-	text-shadow: 1px 1px 2px var(--text-color);
+        color: var(--secondary-link-color);
+        font-style: italic;
+        text-shadow: 1px 1px 2px var(--text-color);
+}
+
+.back-home-box {
+        background-color: white !important;
 }
