@@ -136,7 +136,7 @@ nav {
 }
 
 .gitlabicons > a {
-	color: aquamarine;
-	font-style: italic;
-	text-shadow: #181818;
+        color: aquamarine;
+        font-style: italic;
+        text-shadow: 1px 1px 2px #181818;
 }

@@ -2,7 +2,7 @@
 
 HTML, CSS and JavaScript practices.
 
-## Thing are from
+## Things are from.
 
 ![Mango Icon](https://raw.githubusercontent.com/Mango-Clark/Mango-Clark.github.io/main/image/logo128.svg) Mango svg image logo is made by [Me](https://github.com/Mango-Clark)!
 
