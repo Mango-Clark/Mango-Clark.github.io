@@ -8,8 +8,25 @@
 }
 
 * {
-	padding: 0px 0px;
-	border: 0px;
+        padding: 0px 0px;
+        border: 0px;
+}
+
+/* font size utility classes */
+.size-small {
+        font-size: 0.875rem;
+}
+
+.size-medium {
+        font-size: 1rem;
+}
+
+.size-large {
+        font-size: 1.5rem;
+}
+
+.size-xlarge {
+        font-size: 2rem;
 }
 
 a {
@@ -44,9 +61,9 @@ body {
 /* navigation bar */
 
 .navigationbar {
-	position: sticky;
-	top: 0;
-	height: 90px;
+        position: sticky;
+        top: 0;
+        height: 5.625rem;
 	color: var(--text-color);
 	display: flex;
 	justify-self: center;
@@ -72,60 +89,63 @@ body {
 }
 
 .title {
-	height: 36px;
-	padding: 0px 25px;
-	margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        height: 2.25rem;
+        padding: 0 1.5625rem;
+        margin-bottom: 0.625rem;
+        white-space: nowrap;
 }
 
 .title .logo {
-	height: 36px;
-	font-size: 36px;
+        height: 2.25rem;
+        font-size: 2.25rem;
 }
 
 .title_text {
-	font-size: 36px;
-	font-weight: bold;
-	padding-left: 7px;
+        font-size: 2.25rem;
+        font-weight: bold;
+        padding-left: 0.4375rem;
 }
 
 .menu {
-	align-items: center;
-	display: flex;
-	justify-self: center;
-	align-items: center;
-	width: 570px;
-	padding-right: 25px;
-	justify-content: space-between;
+        align-items: center;
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        width: 35.625rem;
+        padding-right: 1.5625rem;
+        justify-content: space-between;
 }
 
 #item_menu {
-	display: flex;
-	justify-content: space-between;
-	padding: 0px 5px;
-	font-size: 1.5rem;
-	font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0.3125rem;
+        font-size: 1.5rem;
+        font-weight: bold;
 }
 
 .menu_items {
-	margin: 0px 5px;
-	padding: 3px 7px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: var(--primary-color);
-	border-radius: 10px;
+        margin: 0 0.3125rem;
+        padding: 0.1875rem 0.4375rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--primary-color);
+        border-radius: 0.625rem;
 }
 
 .menu_items .icon {
-	height: 1.5rem;
-	margin-top: 5px;
+        height: 1.5rem;
+        margin-top: 0.3125rem;
 }
 
 #fab_menu {
-	display: flex;
-	justify-content: space-between;
-	width: 100px;
+        display: flex;
+        justify-content: space-between;
+        width: 6.25rem;
 }
 
 .fab_icon {
@@ -143,31 +163,31 @@ body {
 		display: none;
 	}
 
-	.fas {
-		padding: 10px 10px;
-	}
+        .fas {
+                padding: 0.625rem 0.625rem;
+        }
 
-	.fas img {
-		height: 36px;
-	}
+.fas img {
+        height: 2.25rem;
+}
 }
 
 
 .container {
-	padding: 20px;
-	max-width: 800px;
-	margin: 0 auto;
+        padding: 1.25rem;
+        max-width: 50rem;
+        margin: 0 auto;
 }
 
 .content {
-	border: 1px solid var(--text-color);
-	padding: 0 15px;
+        border: 1px solid var(--text-color);
+        padding: 0 0.9375rem;
 }
 
 .footer {
-	padding: 10px 20px;
-	background-color: var(--secondary-color);
-	color: white;
+        padding: 0.625rem 1.25rem;
+        background-color: var(--secondary-color);
+        color: white;
 }
 
 .gitlabicons>a {
