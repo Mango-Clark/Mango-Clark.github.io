@@ -199,3 +199,20 @@ body {
 .back-home-box {
         background-color: white !important;
 }
+
+#scrollTopBtn {
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        padding: 0.5rem 0.75rem;
+        font-size: 1rem;
+        background-color: var(--primary-color);
+        color: white;
+        border-radius: 0.375rem;
+        cursor: pointer;
+        display: none;
+}
+
+#scrollTopBtn.show {
+        display: block;
+}
