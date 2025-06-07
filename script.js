@@ -18,3 +18,17 @@ document.addEventListener("scroll", () => {
                 nav.classList.add("scrolled");
         }
 });
+
+const scrollBtn = document.getElementById("scrollTopBtn");
+if (scrollBtn) {
+        window.addEventListener("scroll", () => {
+                if (window.scrollY > 200) {
+                        scrollBtn.classList.add("show");
+                } else {
+                        scrollBtn.classList.remove("show");
+                }
+        });
+        scrollBtn.addEventListener("click", () => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+}
