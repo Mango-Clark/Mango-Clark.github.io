@@ -61,6 +61,12 @@
         </div>
         <textarea id="notes"></textarea>
         <script>
+                window.texme = {
+                        markdownURL: './marked.min.js',
+                        MathJaxURL: './tex-mml-chtml.js'
+                };
+        </script>
+        <script>
                 fetch('2025_KECE231-02_Classnotes.md')
                         .then(r => r.text())
                         .then(t => {
